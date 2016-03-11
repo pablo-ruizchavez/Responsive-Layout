@@ -1,0 +1,129 @@
+/**************************
+GENERAL STYLING
+**************************/
+* {
+  box-sizing:border-box;
+}
+
+html {
+  background-color: #fafafa;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  text-align: center;
+  line-height: 2em;
+}
+
+.content {
+  background-color: #ffffff;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.banner, .content, .container, .contact {
+  padding: 40px 0 20px 0;
+}
+
+hr {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/**************************
+FONTS
+**************************/
+
+p {
+    font-size: 1.2em;
+    color: #999999;
+    font-weight: 300;
+}
+
+h1, h2, h3, li, a {
+  color: #333333;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 1.1em;
+}
+
+h3 {
+  font-size: 1.6em;
+  font-weight: 500;
+}
+
+/**************************
+LISTS
+**************************/
+
+ul {
+  padding: 0;
+}
+
+.main-nav li {
+  list-style: none;
+  background-color: #ffffff;
+  padding: 10px 0;
+  margin: 5px 0;
+
+}
+
+
+/**************************
+IMAGES
+**************************/
+
+.profile-pic {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.content img {
+  width:100%;
+  padding-bottom: 10px
+}
+
+
+/**************************
+CONTACT
+**************************/
+
+.contact a {
+  padding-left: 20px;
+  color: #767676;
+  font-weight: 500;
+}
+
+
+/**************************
+FOOTER
+**************************/
+
+footer p {
+  font-size: 1em;
+  font-weight: 600;
+  padding-bottom: 10px;
+  color: #333333;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
