@@ -12,11 +12,16 @@ GENERAL STYLING
 }
 
 html {
-  background-color: #fafafa;
+  background-color: #edeff0;
 }
 
 a {
   text-decoration: none;
+  transition: all .2s;
+}
+
+a:hover {
+  color: #767676;
 }
 
 body {
@@ -42,15 +47,19 @@ header {
   margin: 0 auto;
 }
 
-.banner, .content, .container, .contact {
-  padding: 40px 0 20px 0;
+.banner, .content, .container, .contact, .goals {
+  padding: 40px 0;
 }
 
 hr {
   border: 0;
   height: 0;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  max-width: 1024px;
+}
+
+.wrap {
+  min-height: calc(100vh - 82px)
 }
 
 /**************************
@@ -68,7 +77,8 @@ h1, h2, h3, li, a {
 }
 
 h1 {
-  font-size: 2.5em;
+  font-size: 2.4em;
+  letter-spacing: -2.5px;
 }
 
 h2 {
@@ -98,10 +108,28 @@ ul {
   text-transform: uppercase;
 }
 
-.main-nav li a {
-  width: 100%;
+ul.skills {
+  padding: 10px 0;
+  text-align: center;
 }
 
+.contact a,
+.skills li {
+  border-radius: 6px;
+  display: inline-block;
+  background: #36acd0;
+  color: white;
+  padding: 5px 10px;
+  margin: 5px 2px;
+  border-bottom: solid 3px #2e9ab3;
+  border-radius: 5px;
+  transition: all .2s;
+}
+
+.skills li:hover,
+.contact a:hover {
+  transform: scale(1.05);
+}
 
 /**************************
 IMAGES
@@ -111,6 +139,7 @@ IMAGES
   width: 75%;
   margin: 0 auto;
   transition: all .2s;
+  border: solid 8px #ffffff;
 }
 
 .content img {
@@ -124,30 +153,50 @@ IMAGES
   transform: scale(1.05);
 }
 
+.profile-pic:hover {
+  transform: scale(1.05) rotate(1deg);
+}
+
 
 /**************************
-CONTACT
+GOALS & CONTACT
 **************************/
 
+.goals {
+  margin-bottom: 40px;
+}
+
+.goals p {
+  max-width: 720px;
+    margin: 0 auto;
+}
+
 .contact a {
-  padding-left: 20px;
-  color: #767676;
-  font-weight: 500;
+  padding: 2px 25px;
+  color: #ffffff;
+  font-weight: 300;
+  width: 250px;
 }
 
 .contact p {
   max-width: 530px;
-    margin: 0 auto;
+    margin: 0 auto 20px auto;
 }
 
 .contact-links {
-  padding: 30px 0;
+  padding: 0;
 }
 
 
 /**************************
 FOOTER
 **************************/
+
+footer {
+  width:80%;
+  margin:0 auto;
+  max-width: 960px;
+}
 
 footer p {
   font-size: 1em;
@@ -189,7 +238,7 @@ TABLET MEDIA QUEIRIE
   .main-nav li {
     display: inline-block;
     background-color: #fafafa;
-    padding: 0 25px;
+    padding: 5px 15px;
     margin: 0 10px;
   }
 
@@ -203,7 +252,7 @@ TABLET MEDIA QUEIRIE
   .tagline {
     text-align: left;
     margin-top: 0;
-    padding-left: 10px;
+    padding-left:;
   }
 
   .container {
@@ -271,7 +320,12 @@ DESKTOP MEDIA QUEIRIE
 
   .main-nav {
     float: right;
-    padding-top: 21px;
+    padding-top: 12px;
+    border-bottom: solid 2px #fafafa
+  }
+
+  .main-nav li {
+    border-radius: 6px 6px 0 0;
   }
 
   .content {

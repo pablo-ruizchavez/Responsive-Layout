@@ -2,26 +2,44 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Student Name | Responsive Layout</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pablo Ruiz de Chavez | Front-End Web Developer</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
   </head>
-  <body>
+  <body id="top">
     <div class="wrapper">
       <header class="clearfix">
-        <h1 class="name"><a href="index.html">Student Name</a></h1>
+        <h1 class="name">Pablo Ruiz de Chavez</h1>
         <ul class="main-nav">
-          <li><a href="" style="color: #36acd0;">Home</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#top">Home</a></li>
+          <li><a href="#goals">Goals</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </header>
       <div class="banner clearfix">
-        <img src="img/profile.png" class="profile-pic" alt="Photo of Student Name">
-        <p class="tagline">Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
+        <img src="img/profile.png" class="profile-pic tada" alt="Photo of Student Name">
+        <p class="tagline">I am a Front-End Web Developer for a creative agency in California who's always looking to legitimize his coding skills. I have experience creating websites using WordPress, HTML and CSS.</p>
+        <p class="tagline">I invite you to browse through my portfolio of work and drop me a line if you have any questions or comments. Thanks for visiting my site!</p>
+      </div>
+      <hr>
+      <div class="goals" id="goals">
+        <h2>Goals</h2>
+        <p>I’m excited to take my skills to the next level via Treehouse's new Techdegree. I want to master the process of designing and coding web sites and increase my knowledge, skills and abilities in:</p>
+        <ul class="skills">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>jQuery</li>
+          <li>AJAX</li>
+          <li>Gulp</li>
+          <li>PHP</li>
+        </ul>
+        <p>I’d like to continue to work for a creative agency helping clients establish an impressive online presence, create solutions for their patrons, and to improve their overall organization.</p>
       </div>
     </div>
-    <div class="content clearfix">
+    <div class="content clearfix" id="portfolio">
       <div class="wrapper">
         <h2>Portfolio</h2>
         <div class="container">
@@ -72,24 +90,25 @@
       </div>
     </div>
     <div class="wrapper">
-      <div class="contact">
+      <div class="contact" id="contact">
         <h2>Contact</h2>
         <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
         <div class="contact-links">
-          <p>Phone<a href="tel:+1(111)555-1234">+1 (111) 555-1234</a></p>
-          <p>Email<a href="mailto:pablo@jpmktg.com">pablo@jpmktg.com</a></p>
+          <a href="tel:+1(111)555-1234">Call Me</a>
+          <a href="mailto:pablo@jpmktg.com">Email Me</a>
         </div>
       </div>
       <hr>
-      <footer>
-        <p class="left"><a href="index.html">Student Name</a></p>
-        <p class="right hidden"><a href="#">BACK TO TOP</a></p>
-        <ul class="footer-nav">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </footer>
     </div>
+    <footer>
+      <p class="left">Student Name</p>
+      <p class="right hidden"><a href="#">BACK TO TOP</a></p>
+      <ul class="footer-nav">
+        <li><a href="#top">Home</a></li>
+        <li><a href="#goals">Goals</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </footer>
   </body>
 </html>
