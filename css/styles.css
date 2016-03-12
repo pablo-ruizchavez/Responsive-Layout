@@ -24,18 +24,9 @@ body {
   line-height: 2em;
 }
 
-header {
-  margin-top: 0;
-}
-
 .content {
   background-color: #ffffff;
   position: relative;
-}
-
-.container p {
-  max-width: 530px;
-  margin: 0 auto;
 }
 
 .wrapper {
@@ -105,7 +96,7 @@ IMAGES
 **************************/
 
 .profile-pic {
-  width: 75%;
+  width: 280px;
   margin: 0 auto;
   border-bottom: 4px solid #ccc;
   border-radius: 6px;
@@ -127,11 +118,6 @@ CONTACT
   font-weight: 500;
 }
 
-.contact p {
-  max-width: 530px;
-    margin: 0 auto;
-}
-
 .contact-links {
   padding: 30px 0;
 }
@@ -144,8 +130,8 @@ FOOTER
 footer p {
   font-size: 1em;
   font-weight: 600;
-  color: #333333;
   padding-bottom: 10px;
+  color: #333333;
 }
 
 .left {
@@ -156,12 +142,10 @@ footer p {
   float: right;
 }
 
-.footer-nav {
-  display: none;
-}
+
 
 /**************************
-TABLET MEDIA QUEIRIE
+MEDIA QUIERIES
 **************************/
 
 @media screen and (min-width: 768px) {
@@ -175,11 +159,7 @@ TABLET MEDIA QUEIRIE
   }
 
   .name {
-    vertical-align: middle;
-  }
-
-  header {
-    padding-top: 20px;
+    margin-top: 50px;
   }
 
   .main-nav li {
@@ -193,7 +173,6 @@ TABLET MEDIA QUEIRIE
     float:right;
     margin-left: 15px;
     margin-bottom: 30px;
-    width: 40%;
   }
 
   .tagline {
@@ -216,74 +195,9 @@ TABLET MEDIA QUEIRIE
   }
 
   .contact p {
+    width: 75%;
+    margin: 0 auto;
     padding-top: 10px;
   }
-
-  .hidden {
-    display: none;
-  }
-
-  .footer-nav {
-    display: inline-block;;
-    font-size: 1em;
-    font-weight: 600;
-    padding-bottom: 10px;
-    color: #333333;
-    float: right;
-  }
-
-  .footer-nav li {
-        display: inline-block;
-        padding-left: 30px;
-  }
-
-}
-
-
-/**************************
-DESKTOP MEDIA QUEIRIE
-**************************/
-
-@media screen and (min-width: 1024px) {
-
-  .wrapper {
-    width: 90%;
-    max-width: 1000px;
-  }
-
-  header, .name, .main-nav {
-    display: inline-block;
-  }
-
-  header {
-    width: 100%;
-  }
-
-  .name {
-    float:left;
-  }
-
-  .main-nav {
-    float: right;
-    padding-top: 21px;
-  }
-
-  .main-nav ul {
-    vertical-align: middle;
-  }
-
-  .content {
-    width: 95%;
-    margin: 0 auto;
-  }
-
-  .container {
-    width: 33.3333%;
-  }
-
-  .container img {
-    padding: 0 8px;
-  }
-
 
 }
