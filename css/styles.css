@@ -1,6 +1,10 @@
 /**************************
 GENERAL STYLING
 **************************/
+.button {
+  clear: both;
+}
+
 * {
   box-sizing:border-box;
 }
@@ -95,7 +99,8 @@ ul {
   padding: 0;
 }
 
-.main-nav li {
+.main-nav li a {
+  display: block;
   list-style: none;
   background-color: #ffffff;
   padding: 10px 0;
@@ -103,6 +108,13 @@ ul {
   font-weight: 600;
   text-transform: uppercase;
 }
+
+.main-nav li {
+  list-style: none;
+}
+
+
+
 
 ul.skills {
   padding: 10px 0;
@@ -234,8 +246,9 @@ TABLET MEDIA QUEIRIE
   .main-nav li {
     display: inline-block;
     background-color: #fafafa;
-    padding: 5px 15px;
-    margin: 0 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 5px;
   }
 
   .profile-pic {
@@ -315,12 +328,17 @@ DESKTOP MEDIA QUEIRIE
 
   .main-nav {
     float: right;
-    padding-top: 12px;
-    border-bottom: solid 2px #fafafa
+    border-bottom: solid 2px #fafafa;
+    padding-top: 8px;
   }
 
   .main-nav li {
     border-radius: 6px 6px 0 0;
+  }
+
+  .main-nav li a {
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 
   .content {
