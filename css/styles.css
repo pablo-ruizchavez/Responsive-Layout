@@ -1,10 +1,6 @@
 /**************************
 GENERAL STYLING
 **************************/
-.button {
-  clear: both;
-}
-
 * {
   box-sizing:border-box;
 }
@@ -102,7 +98,6 @@ ul {
 .main-nav li a {
   display: block;
   list-style: none;
-  background-color: #ffffff;
   padding: 10px 0;
   margin: 5px 0;
   font-weight: 600;
@@ -112,9 +107,6 @@ ul {
 .main-nav li {
   list-style: none;
 }
-
-
-
 
 ul.skills {
   padding: 10px 0;
