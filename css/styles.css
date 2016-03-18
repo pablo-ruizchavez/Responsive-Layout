@@ -98,6 +98,7 @@ ul {
 .main-nav li a {
   display: block;
   list-style: none;
+  background-color: #fafafa;
   padding: 10px 0;
   margin: 5px 0;
   font-weight: 600;
